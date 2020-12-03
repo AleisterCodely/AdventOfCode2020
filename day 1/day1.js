@@ -20,8 +20,14 @@ reader.on('close', function(){
     let thing1=inputArray[i];
     for(let j=0;j<inputArray.length;j++){
       let thing2=inputArray[j];
-      if(Number(thing1)+Number(thing2)==2020){
-        console.log (thing1*thing2);
+      for(let z=0;z<inputArray.length;z++){
+        let thing3=inputArray[z];
+        if(Number(thing1)+Number(thing2)+Number(thing3)==2020){
+          console.log (thing1*thing2*thing3);
+          //HIGHWAY TO THE
+          //DANGER ZONE
+          process.exit()
+        }
       }
     }
   }
