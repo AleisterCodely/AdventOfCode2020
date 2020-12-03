@@ -31,4 +31,4 @@ reader.on('close', function(){
       }
     }
   }
-})
+});
